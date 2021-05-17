@@ -1,0 +1,39 @@
+body {
+  font-family: "Oswald", sans-serif !important;
+}
+/* HEADER  */
+
+.navbar {
+  background-color: #185893;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.espace a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Page licence  */
+.container h3 {
+  color: #185893;
+}
+
+#titre-licence {
+  background-color: #ccd0d0;
+  height: 60px;
+}
+
+#titre-licence h3 {
+  color: black;
+}
+
+/* footer */
+
+footer {
+  background-color: #185893;
+  padding: 20px;
+  color: #fff;
+}
