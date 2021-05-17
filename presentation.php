@@ -7,7 +7,18 @@
 <div class="container pt-4">
   <h3>Lieu de formation</h3>
   <hr>
-  <p>Évry – Site Roméro 25, cours Monseigneur Roméro, 91000 Évry</p>
+  <div class="row">
+    <div class="col-md-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.3180393112207!2d2.424768965494701!3d48.62289577926516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de0540bbd553%3A0x309c1074192d15d7!2sInstitut%20Universitaire%20de%20Technologie%20d&#39;Evry%20-%20Rom%C3%A9ro%20(GLT%20-%20GMP%20-%20QLIO%20-%20TC)!5e0!3m2!1sfr!2sfr!4v1621239154423!5m2!1sfr!2sfr" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-md-6">
+    <p>Institut Universitaire de Technologie d'Evry</br>
+    Roméro (GLT - GMP - QLIO - TC)</br>
+    25 Cours Mgr Roméro</br>
+    91000 Évry-Courcouronnes</br>
+    Téléphone : 0169477379 </br>
+    </div>
+  </div>
 </div>
 <div class="container pt-4">
   <h3>Programme</h3>

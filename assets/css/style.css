@@ -10,6 +10,9 @@ body {
 .nav-link {
   color: #fff !important;
 }
+.nav-link:hover {
+  color:#e06f24 !important;
+}
 
 .espace a {
   text-decoration: none;
@@ -22,7 +25,7 @@ body {
 }
 
 #titre-licence {
-  background-color: #ccd0d0;
+  background-color:#e06f24;
   height: 60px;
 }
 
