@@ -42,8 +42,6 @@ footer {
 }
 
 /* Animation page accueil */
-
-
 .alrazy-title {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 700;
@@ -171,10 +169,54 @@ footer {
     .input-group-text {
       background : #185893 !important;
     }
-
     .signup {
       color : white;
     }
     .signup a {
       color: white;
+    }
+    /* Tableau page d'accueil */
+    .accueil{
+      width: 100%;
+      border-collapse : separate;
+      border-spacing: 30px;
+    }
+    .accueil td{
+      border : 1px solid black;
+      padding: 50px;
+      height: 500px;
+
+    }
+    .presentation {
+      background-image: url("../../assets/images/slide/img1.jpg");
+      background-size: 1000px;
+      position: relative;
+    }
+
+    .presentation h3 {
+      color: #fff !important;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .formations {
+      background-image: url("../../assets/images/slide/img2.jpg");
+      background-size: 1000px;
+      position: relative;
+    }
+
+    .formations h3 {
+      color: #fff !important;
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .espace {
+      background-image: url("../../assets/images/slide/img3.jpg");
+      background-size: 1000px;
+      position: relative;
+    }
+
+    .espace h3 {
+      color: #fff !important;
+      display: inline-block;
+      vertical-align: bottom;
     }
