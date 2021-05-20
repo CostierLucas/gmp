@@ -17,8 +17,9 @@
                 <div id="emailHelp" class="form-text">Ne partagez jamais votre mot de passe.</div>
             </div>
             <div class="d-flex">
-                <button type="submit" class="btn btn-primary me-3">Connexion</button>
+                <button type="submit" name="submitBtnLogin" class="btn btn-primary me-3">Connexion</button>
                 <button class="btn btn-primary"> <a class="text-light" href="./form-inscription.php">S'incrire</a></button>
+                <span class="loginMsg"><?php echo @$msg;?></span>
             </div>
         </form>
     </div>
