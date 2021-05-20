@@ -21,7 +21,7 @@
             <td class="formations"> <a href="/gmp/lpmief.php"><h3>Formations</h3>  </a> </td>
         </tr>
         <tr>
-        <td colspan="2" class="espace"><a href="/gmp/etudiant.php">  <h3>Espace Personnel</h3></a>  </td> 
+        <td colspan="2" class="espace-perso"><a href="/gmp/etudiant.php">  <h3>Espace Personnel</h3></a>  </td> 
         </tr>
     </table>
 </div>

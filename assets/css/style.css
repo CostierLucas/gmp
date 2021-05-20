@@ -194,14 +194,13 @@ footer {
     }
 
     .presentation h3 {
-      color: #fff !important;
+      color: #fff ;
       display: inline-block;
       vertical-align: bottom;
     }
     .formations {
       background-image: url("../../assets/images/slide/img2.jpg");
       background-size: 1000px;
-      position: relative;
     }
 
     .formations h3 {
@@ -209,13 +208,13 @@ footer {
       display: inline-block;
       vertical-align: bottom;
     }
-    .espace {
+    .espace-perso {
       background-image: url("../../assets/images/slide/img3.jpg");
       background-size: 1000px;
       position: relative;
     }
 
-    .espace h3 {
+    .espace-perso h3 {
       color: #fff !important;
       display: inline-block;
       vertical-align: bottom;
