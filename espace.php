@@ -1,6 +1,6 @@
 <?php include('./header.php'); ?>
 <div class="container pt-4">
-    <h3>Espace Enseignant</h3>
+    <h3>Espace </h3>
     <hr>
 </div>
 <div class="container">
@@ -12,7 +12,7 @@
             <div class="col-12 align-self-center">
                 <div class="row">
                     <div class="col-12 col-lg-7 mx-auto text-center">
-                        <p class="text-muted lead mb-5">Bienvenue dans l’espace enseignants, accessible aux enseignants de l'IUT. Découvrez les différentes fonctionnalités disponible.</p>
+                        <p class="text-muted lead mb-5">Veuillez choisir votre statut afin de vous identifier.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -26,8 +26,9 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
-                                        <p class="text-warning">Notes</p>
-                                        <p class="text-secondary">Consultez, ajoutez et modifiez vos notes publiées depuis votre compte enseignant.</p>
+                                        <p class="text-warning">Étudiant</p>
+                                        <a href="./etudiant.php"><button class="btn btn-warning mt-3 px-4">Connectez-vous</button></a>
+
                                     </div>
                                 </div>
                             </div>
@@ -43,8 +44,9 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
-                                        <p class="text-success">Emploi du temps personnel</p>
-                                        <p class="text-secondary">Consulter votre emploi du temps personnel depuis votre espace enseignant.</p>
+                                        <p class="text-success">Enseignant</p>
+                                        <a href="./enseignant.php"><button class="btn btn-success mt-3 px-4">Connectez-vous</button></a>
+
                                     </div>
                                 </div>
                             </div>
@@ -55,13 +57,14 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col mx-auto text-center">
-                                        <i class="fa fa-book-open fa-4x text-danger"></i>
+                                        <i class="fa fa-book-open fa-4x text-info"></i>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
-                                        <p class="text-danger">Supports de cours</p>
-                                        <p class="text-secondary">Déposez et partagez vos supports cours au formats PDF avec vos élèves.</p>
+                                        <p class="text-info">Entreprise</p>
+                                        <a href="./entreprise.php"><button class="btn btn-info mt-3 px-4">Connectez-vous</button></a>
+
                                     </div>
                                 </div>
                             </div>
@@ -69,27 +72,7 @@
                     </div>
                     
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-12">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col mx-auto text-center">
-                                        <i class="fa fa-user fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 text-center">
-                                        <p class="text-primary">Connectez vous</p>
-                                        <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte enseignant.</p>
-                                        <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@
                 </a> </td>
         </tr>
         <tr>
-            <td colspan="2" class="espace-perso"><a href="/gmp/etudiant.php">
+            <td colspan="2" class="espace-perso"><a href="./espace.php">
                     <h3>Espace Personnel</h3>
                 </a> </td>
         </tr>
