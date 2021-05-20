@@ -1,4 +1,5 @@
- <div class="container pt-4">
+<?php include('./header.php'); ?>
+<div class="container pt-4">
     <h3>Connexion</h3>
     <hr>
 </div>
@@ -61,3 +62,4 @@
 			</div>
 		</div>
 	</div>
+	<?php include('./footer.php');

@@ -1,6 +1,6 @@
 <?php include('./header.php'); ?>
 <div class="container pt-4">
-    <h3>Espace Étudiant</h3>
+    <h3>Espace Enseignant</h3>
     <hr>
 </div>
 <div class="container">
@@ -12,28 +12,11 @@
             <div class="col-12 align-self-center">
                 <div class="row">
                     <div class="col-12 col-lg-7 mx-auto text-center">
-                        <p class="text-muted lead mb-5">Bienvenue sur l'espace étudiant, voici toutes les fonctionnalités disponible sur votre espace étudiant.</p>
+                        <p class="text-muted lead mb-5">Bienvenue dans l’espace enseignants, accessible aux enseignants de l'IUT. Découvrez les différentes fonctionnalités disponible.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-3">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col mx-auto text-center">
-                                        <i class="fas fa-graduation-cap fa-4x text-info"></i>
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 text-center">
-                                        <p class="text-info">Notes et Emploi du temps</p>
-                                        <p class="text-secondary">Consultez vos notes et votre emploi du temps depuis votre espace étudiant.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row">
@@ -43,14 +26,14 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
-                                        <p class="text-warning">Projets Tuteurés</p>
-                                        <p class="text-secondary">Vous avez la possibilitée de consulter les projet tuteurés dans leur ensemble afin d'en choisir un.</p>
+                                        <p class="text-warning">Notes</p>
+                                        <p class="text-secondary">Consultez, ajoutez et modifiez vos notes publiées depuis votre compte enseignant.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row">
@@ -60,14 +43,14 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
-                                        <p class="text-success">Offre Alternance</p>
-                                        <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible. </p>
+                                        <p class="text-success">Emploi du temps personnel</p>
+                                        <p class="text-secondary">Consulter votre emploi du temps personnel depuis votre espace enseignant.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="row">
@@ -78,7 +61,7 @@
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-danger">Supports de cours</p>
-                                        <p class="text-secondary">Accédez aux différents supports de cours mis à disposition, par vos enseignants.</p>
+                                        <p class="text-secondary">Déposez et partagezvos supports cours au formats PDF avec vos élèves.</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +81,7 @@
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-primary">Connectez vous</p>
-                                        <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte étudiant.</p>
+                                        <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte enseignant.</p>
                                         <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
 
                                     </div>
