@@ -5,7 +5,7 @@
 </div>
 <div class="container">
 
-<!-- Feature Cards -->
+<!-- Carte de différents espaces -->
 <section class="d-flex bg-light" id="feature-cards">
     <div class="container d-flex justify-content-center">
         <div class="row align-items-center justify-content-center">
@@ -15,6 +15,7 @@
                         <p class="text-muted lead mb-5">Veuillez choisir votre statut afin de vous identifier.</p>
                     </div>
                 </div>
+                <!-- Espace Étudiant -->
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <div class="card mb-3">
@@ -34,6 +35,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Espace enseignant -->
                     <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body">
@@ -52,6 +54,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Espace entreprise -->
                     <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-body">

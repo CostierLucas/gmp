@@ -5,7 +5,7 @@
 </div>
 <div class="container">
 
-<!-- Feature Cards -->
+<!-- Espace Étudiant -->
 <section class="d-flex bg-light" id="feature-cards">
     <div class="container d-flex justify-content-center">
         <div class="row align-items-center justify-content-center">
@@ -15,6 +15,7 @@
                         <p class="text-muted lead mb-5">Bienvenue sur l'espace étudiant, voici toutes les fonctionnalités disponible sur votre espace étudiant.</p>
                     </div>
                 </div>
+                <!-- Notes et emploi du temps -->
                 <div class="row">
                     <div class="col-12 col-lg-3">
                         <div class="card mb-3">
@@ -33,6 +34,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Projet tuteurés -->
                     <div class="col-12 col-lg-3">
                         <div class="card mb-3">
                             <div class="card-body">
@@ -50,6 +52,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Offre alternance -->
                     <div class="col-12 col-lg-3">
                         <div class="card mb-3">
                             <div class="card-body">
@@ -67,6 +70,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Support de cours -->
                     <div class="col-12 col-lg-3">
                         <div class="card mb-3">
                             <div class="card-body">
