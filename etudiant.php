@@ -1,4 +1,7 @@
-<?php include('./header.php'); ?>
+<?php 
+session_start(); 
+include('./header.php'); ?>
+
 <div class="container pt-4">
     <h3>Espace Étudiant</h3>
     <hr>
@@ -95,14 +98,18 @@
                                         <i class="fa fa-user fa-4x text-primary"></i>
                                     </div>
                                 </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 text-center">
-                                        <p class="text-primary">Connectez vous</p>
-                                        <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte étudiant.</p>
-                                        <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
+                                <?php if (isset($_SESSION['sess_user_email'])){ 
+                                    echo '<p class="connect"> Bienvenu, '.$_SESSION['sess_user_email'];  ?>  
+                                <?php } else { ?> 
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <p class="text-primary">Connectez vous</p>
+                                            <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte étudiant.</p>
+                                            <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
 
+                                        </div>
                                     </div>
-                                </div>
+                                <?php } ?>  
                             </div>
                         </div>
                     </div>
