@@ -98,8 +98,16 @@ include('./header.php'); ?>
                                         <i class="fa fa-user fa-4x text-primary"></i>
                                     </div>
                                 </div>
-                                <?php if (isset($_SESSION['sess_user_email'])){ 
-                                    echo '<p class="connect"> Bienvenu, '.$_SESSION['sess_user_email'];  ?>  
+                                <?php if (isset($_SESSION['sess_user_email'])){ ?>
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                        <?php  echo '<p class="text-primary"> Bienvenu, '.$_SESSION['sess_user_email']; ?>
+                                            <p class="text-secondary">Vous êtes identifié sur votre compte étudiant.</p>
+                                            <form action="./suppression.php" method="post">
+                                                <input type="submit" name="logout" value="Déconnexion" />
+                                            </form>
+                                        </div>
+                                    </div>
                                 <?php } else { ?> 
                                     <div class="row mt-3">
                                         <div class="col-12 text-center">
