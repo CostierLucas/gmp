@@ -1,4 +1,4 @@
-<?php include('./header.php'); ?>
+<?php include('header.php'); ?>
 <div class="container pt-4">
     <h3>Connexion</h3>
     <hr>

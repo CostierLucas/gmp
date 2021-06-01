@@ -84,6 +84,15 @@ CREATE TABLE `note` (
   FOREIGN KEY (etudiant_email) REFERENCES etudiant (email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Table structure for table `cours`
+--
+
+CREATE TABLE `cours` (
+   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `nom_cours` varchar(255) NOT NULL,
+  `pdf_doc`  blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
