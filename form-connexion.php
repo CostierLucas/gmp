@@ -3,28 +3,7 @@
     <h3>Connexion</h3>
     <hr>
 </div>
-<!--
-<div class="container pt-4">
-    <div class="row">
-        <form action="./controller/connexion.php" method="post">
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="mb-3">
-                <label for="mdp" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" name="mdp" id="mdp">
-                <div id="emailHelp" class="form-text">Ne partagez jamais votre mot de passe.</div>
-            </div>
-            <div class="d-flex">
-                <button type="submit" name="submitBtnLogin" class="btn btn-primary me-3">Connexion</button>
-                <button class="btn btn-primary"> <a class="text-light" href="./form-inscription.php">S'incrire</a></button>
-                <span class="loginMsg"><?php echo @$msg;?></span>
-            </div>
-        </form>
-    </div>
-</div>
--->
+
 <div class="container h-100">
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
@@ -53,7 +32,13 @@
 				   </div>
 					</form>
 				</div>
-		
+				<?php if (isset($_SESSION['errors'])): ?>
+    					<div class="form-errors">	
+        				<?php foreach($_SESSION['errors'] as $error): ?>
+            				<p><?php echo $error ?></p>
+        				<?php endforeach; ?>
+    					</div>
+					 <?php endif; ?>
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
 						<p class="signup"> Vous n'avez pas de compte ? <a href="./form-inscription.php" class="ml-2">Inscrivez-vous</a> </p>

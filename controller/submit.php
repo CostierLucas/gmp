@@ -3,8 +3,7 @@
 $nom_cours = $_POST['nom_cours'];
 $pdf_doc = $_POST['pdf_doc'];
 
-$insert_sql = "INSERT INTO `cours` (`nom_cours`, `pdf_doc`)
-                VALUES(:nom_cours, :pdf_doc);";
+$insert_sql = "INSERT INTO cours ( nom_cours, pdf_doc ) VALUES( :nom_cours, :pdf_doc );";
 
 $stmt = $conn->prepare($insert_sql);
 
