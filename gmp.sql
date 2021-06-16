@@ -82,21 +82,8 @@ CREATE TABLE `etudiant` (
 --
 
 INSERT INTO `etudiant` (`id`, `email`, `mdp`, `date_inscription`) VALUES
-(1, 'test@test.fr', 'deedede', '2021-05-06 00:00:00');
+(1, 'etudiant@test.fr', 'deedede', '2021-05-06 00:00:00');
 
-
---
--- Table structure for table `note`
---
-
-CREATE TABLE `note` (
-  `id` int(11) NOT NULL,
-  `etudiant_id` int(11) NOT NULL,
-  `matiere` varchar(255) NOT NULL,
-  `coefficient` int(11) NOT NULL,
-  `enseignant` int(11) NOT NULL,
-  FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `cours`
@@ -130,17 +117,6 @@ ALTER TABLE `entreprise`
 ALTER TABLE `etudiant`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `cours`
---
-ALTER TABLE `cours`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `note`
---
-ALTER TABLE `note`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -164,11 +140,25 @@ ALTER TABLE `entreprise`
 ALTER TABLE `etudiant`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
+
 --
--- AUTO_INCREMENT for table `cours`
+-- Table structure for table `note`
 --
-ALTER TABLE `cours`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+CREATE TABLE `note` (
+  `id` int(11) NOT NULL,
+  `etudiant_id` int(11) NOT NULL,
+  `matiere` varchar(255) NOT NULL,
+  `coefficient` int(11) NOT NULL,
+  `enseignant` int(11) NOT NULL,
+  FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for table `note`
+--
+ALTER TABLE `note`
+  ADD PRIMARY KEY (`id`);
 
   --
 -- AUTO_INCREMENT for table `note`

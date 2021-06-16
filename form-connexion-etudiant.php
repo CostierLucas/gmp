@@ -18,7 +18,7 @@
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="email" class="form-control input_user" value="admin@y" placeholder="Votre e-mail">
+							<input type="text" name="email" class="form-control input_user" value="etudiant@gmail.com" placeholder="Votre e-mail">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">

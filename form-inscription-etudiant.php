@@ -23,10 +23,6 @@
                 <input type="type" class="form-control" name="telephone" id="telephone">
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="type" class="form-control" id="email" name="email">
-            </div>
-            <div class="mb-3">
                 <label for="mobile" class="form-label">Mobile</label>
                 <input type="type" class="form-control" id="mobile" name="mobile">
             </div>

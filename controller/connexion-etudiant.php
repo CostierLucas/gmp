@@ -18,7 +18,7 @@ if($email != "" && $mdp != "") {
     $row = $stmt->fetch(PDO::FETCH_BOTH);
     var_dump($row['email']);
     if($count == 1 && !empty($row)) {
-      $_SESSION['sess_user_email'] = $row['email'];
+      $_SESSION['sess_user_etudiant_email'] = $row['identifiant'];
       header('Location: ../etudiant.php');
     } else {
       $_SESSION['errorMDP'] = array("Mot de passe ou email invalide");
