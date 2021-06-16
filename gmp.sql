@@ -23,6 +23,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `enseignant` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `mobile` int(11) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -44,6 +46,11 @@ INSERT INTO `enseignant` (`id`, `email`, `mdp`, `date_inscription`) VALUES
 
 CREATE TABLE `entreprise` (
   `id` int(11) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `poste` varchar(255) NOT NULL,
+  `coordonnee` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
@@ -57,7 +64,14 @@ CREATE TABLE `entreprise` (
 
 CREATE TABLE `etudiant` (
   `id` int(11) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `identifiant` varchar(255) NOT NULL,
+  `ville` varchar(255) NOT NULL,
+  `adresse` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `mobile` int(11) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -77,11 +91,11 @@ INSERT INTO `etudiant` (`id`, `email`, `mdp`, `date_inscription`) VALUES
 
 CREATE TABLE `note` (
   `id` int(11) NOT NULL,
-  `etudiant_email` varchar(255) NOT NULL,
+  `etudiant_id` int(11) NOT NULL,
   `matiere` varchar(255) NOT NULL,
   `coefficient` int(11) NOT NULL,
   `enseignant` int(11) NOT NULL,
-  FOREIGN KEY (etudiant_email) REFERENCES etudiant (email)
+  FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

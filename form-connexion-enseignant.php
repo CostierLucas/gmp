@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="container pt-4">
-    <h3>Connexion</h3>
+    <h3>Connexion à votre compte</h3>
     <hr>
 </div>
 
@@ -13,7 +13,7 @@
 					</div>
 				</div>
 				<div class="d-flex justify-content-center form_container">
-                <form action="./controller/connexion.php" method="post">
+                <form action="./controller/connexion-enseignant.php" method="post">
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -41,7 +41,7 @@
 					 <?php endif; ?>
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						<p class="signup"> Vous n'avez pas de compte ? <a href="./form-inscription.php" class="ml-2">Inscrivez-vous</a> </p>
+						<p class="signup"> Vous n'avez pas de compte ? <a href="./form-inscription-enseignant.php" class="ml-2">Inscrivez-vous</a> </p>
 					</div>
 					
 				</div>

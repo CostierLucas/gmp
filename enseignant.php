@@ -61,7 +61,7 @@
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-danger">Supports de cours</p>
-                                        <p class="text-secondary">Déposez et partagezvos supports cours au formats PDF avec vos élèves.</p>
+                                        <p class="text-secondary">Déposez et partagez vos supports cours au formats PDF avec vos élèves.</p>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                     <div class="col-12 text-center">
                                         <p class="text-primary">Connectez vous</p>
                                         <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte enseignant.</p>
-                                        <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
+                                        <a href="./form-connexion-enseignant.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
 
                                     </div>
                                 </div>

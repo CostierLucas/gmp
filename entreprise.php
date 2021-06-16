@@ -64,7 +64,7 @@
                                     <div class="col-12 text-center">
                                         <p class="text-primary">Connectez vous</p>
                                         <p class="text-secondary">Identifiez vous afin d'accéder à toutes ses fonctionnalités, depuis votre compte entreprise.</p>
-                                        <a href="./form-connexion.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
+                                        <a href="./form-connexion-entreprise.php"><button class="btn btn-primary mt-3 px-4">Connectez-vous</button></a>
 
                                     </div>
                                 </div>
