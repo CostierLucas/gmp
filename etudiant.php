@@ -30,7 +30,14 @@ include('./header.php'); ?>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-info">Notes et Emploi du temps</p>
+                                        <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
+                                            <div class="col-12 text-center">
+                                            <p class="text-secondary">Consultez vos notes et votre emploi du temps depuis votre espace étudiant.</p>
+                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                        </div>
+                                        <?php } else { ?> 
                                         <p class="text-secondary">Consultez vos notes et votre emploi du temps depuis votre espace étudiant.</p>
+                                        <?php } ?> 
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +54,14 @@ include('./header.php'); ?>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-warning">Projets Tuteurés</p>
+                                        <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
+                                            <div class="col-12 text-center">
+                                            <p class="text-secondary">Vous avez la possibilitée de consulter les projet tuteurés dans leur ensemble afin d'en choisir un.</p>
+                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                        </div>
+                                        <?php } else { ?> 
                                         <p class="text-secondary">Vous avez la possibilitée de consulter les projet tuteurés dans leur ensemble afin d'en choisir un.</p>
+                                        <?php } ?> 
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +78,14 @@ include('./header.php'); ?>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-success">Offre Alternance</p>
-                                        <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible. </p>
+                                        <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
+                                            <div class="col-12 text-center">
+                                            <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible.</p>
+                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                        </div>
+                                        <?php } else { ?> 
+                                        <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible.</p>
+                                        <?php } ?> 
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +102,14 @@ include('./header.php'); ?>
                                 <div class="row mt-3">
                                     <div class="col-12 text-center">
                                         <p class="text-danger">Supports de cours</p>
+                                        <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
+                                            <div class="col-12 text-center">
+                                            <p class="text-secondary">Accédez aux différents supports de cours mis à disposition, par vos enseignants.</p>
+                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                        </div>
+                                        <?php } else { ?> 
                                         <p class="text-secondary">Accédez aux différents supports de cours mis à disposition, par vos enseignants.</p>
+                                        <?php } ?> 
                                     </div>
                                 </div>
                             </div>
@@ -103,9 +131,7 @@ include('./header.php'); ?>
                                         <div class="col-12 text-center">
                                         <?php  echo '<p class="text-primary"> Bienvenu, '.$_SESSION['sess_user_etudiant_email']; ?>
                                             <p class="text-secondary">Vous êtes identifié sur votre compte étudiant.</p>
-                                            <form action="./controller/suppression.php" method="post">
-                                                <input type="submit" name="logout" value="Déconnexion" />
-                                            </form>
+                                            <a href="./controller/suppression.php"><button class="btn btn-primary mt-3 px-4">Déconnexion</button></a>
                                         </div>
                                     </div>
                                 <?php } else { ?> 

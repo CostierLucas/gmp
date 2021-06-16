@@ -150,7 +150,6 @@ CREATE TABLE `note` (
   `etudiant_id` int(11) NOT NULL,
   `matiere` varchar(255) NOT NULL,
   `coefficient` int(11) NOT NULL,
-  `enseignant` int(11) NOT NULL,
   FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

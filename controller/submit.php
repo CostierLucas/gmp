@@ -12,4 +12,4 @@ $stmt->execute(array(
     'pdf_doc' => $pdf_doc,
 ));
               
-header('Location: ../index.php');    
+header('Location: ../enseignant.php');    
