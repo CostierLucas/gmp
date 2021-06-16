@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <div class="container pt-4">
-    <h3>Connexion à votre compte enseignant</h3>
+    <h3>Connexion à votre compte recruteur</h3>
     <hr>
 </div>
 

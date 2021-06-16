@@ -39,7 +39,7 @@
                 <label for="statut" class="form-label">Statut</label>
                 <br>
                 <select class="w-100" name="statut" id="statut">
-                    <option value="etudiant">Entreprise</option>
+                    <option value="entreprise">Entreprise</option>
                 </select>
             </div>
             <div class="d-flex">
