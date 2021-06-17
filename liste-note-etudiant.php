@@ -10,12 +10,12 @@
             <div class="mb-3">
             <?php require_once('./controller/config.php');
 
-            $query = "SELECT note FROM cours"; 
+            $query = "SELECT * FROM note WHERE id IN (2)"; 
             $req = $conn->prepare($query);
             $req->execute();
 
             $result = $req->fetch(PDO::FETCH_ASSOC);
-            print_r($result['pdf_doc']);
+            print_r("Vous avez eu un ".$result['note'] . " dans la matière " . $result['matiere'] . " qui a un coefficient " . $result['coefficient'] );
             ?>
             </div>
         </form>

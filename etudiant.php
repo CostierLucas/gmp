@@ -33,7 +33,7 @@ include('./header.php'); ?>
                                         <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
                                             <div class="col-12 text-center">
                                             <p class="text-secondary">Consultez vos notes et votre emploi du temps depuis votre espace étudiant.</p>
-                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                            <a href="./liste-note-etudiant.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
                                         </div>
                                         <?php } else { ?> 
                                         <p class="text-secondary">Consultez vos notes et votre emploi du temps depuis votre espace étudiant.</p>
@@ -105,7 +105,7 @@ include('./header.php'); ?>
                                         <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
                                             <div class="col-12 text-center">
                                             <p class="text-secondary">Accédez aux différents supports de cours mis à disposition, par vos enseignants.</p>
-                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                            <a href="./liste-cours-etudiant.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
                                         </div>
                                         <?php } else { ?> 
                                         <p class="text-secondary">Accédez aux différents supports de cours mis à disposition, par vos enseignants.</p>

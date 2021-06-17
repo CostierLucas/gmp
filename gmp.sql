@@ -150,6 +150,7 @@ CREATE TABLE `note` (
   `etudiant_id` int(11) NOT NULL,
   `matiere` varchar(255) NOT NULL,
   `coefficient` int(11) NOT NULL,
+  'note' int(11) NOT NULL,
   FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -164,3 +165,15 @@ ALTER TABLE `note`
 --
 ALTER TABLE `note`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `image` longblob NOT NULL,
+ `uploaded` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

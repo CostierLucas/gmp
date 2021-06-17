@@ -16,6 +16,10 @@
                 <input type="text" class="form-control" id="etudiant_id" name="etudiant_id">
             </div>
             <div class="mb-3">
+                <label for="note" class="form-label">Note (20)</label>
+                <input type="text" class="form-control" id="note" name="note">
+            </div>
+            <div class="mb-3">
                 <label for="coefficient" class="form-label">Coefficient de la note</label>
                 <input type="text" class="form-control" id="coefficient" name="coefficient">
             </div>
