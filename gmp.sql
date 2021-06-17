@@ -23,6 +23,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `enseignant` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `mobile` int(11) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -44,6 +46,11 @@ INSERT INTO `enseignant` (`id`, `email`, `mdp`, `date_inscription`) VALUES
 
 CREATE TABLE `entreprise` (
   `id` int(11) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `poste` varchar(255) NOT NULL,
+  `coordonnee` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
@@ -57,17 +64,36 @@ CREATE TABLE `entreprise` (
 
 CREATE TABLE `etudiant` (
   `id` int(11) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `identifiant` varchar(255) NOT NULL,
+  `ville` varchar(255) NOT NULL,
+  `adresse` varchar(255) NOT NULL,
+  `telephone` int(11) NOT NULL,
+  `mobile` int(11) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `date_inscription` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 --
 -- Dumping data for table `etudiant`
 --
 
 INSERT INTO `etudiant` (`id`, `email`, `mdp`, `date_inscription`) VALUES
-(1, 'test@test.fr', 'deedede', '2021-05-06 00:00:00');
+(1, 'etudiant@test.fr', 'deedede', '2021-05-06 00:00:00');
+
+
+--
+-- Table structure for table `cours`
+--
+
+CREATE TABLE `cours` (
+   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `nom_cours` varchar(255) NOT NULL,
+  `pdf_doc`  blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
@@ -91,6 +117,7 @@ ALTER TABLE `entreprise`
 ALTER TABLE `etudiant`
   ADD PRIMARY KEY (`id`);
 
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -112,3 +139,41 @@ ALTER TABLE `entreprise`
 --
 ALTER TABLE `etudiant`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+
+--
+-- Table structure for table `note`
+--
+
+CREATE TABLE `note` (
+  `id` int(11) NOT NULL,
+  `etudiant_id` int(11) NOT NULL,
+  `matiere` varchar(255) NOT NULL,
+  `coefficient` int(11) NOT NULL,
+  'note' int(11) NOT NULL,
+  FOREIGN KEY (etudiant_id) REFERENCES etudiant (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for table `note`
+--
+ALTER TABLE `note`
+  ADD PRIMARY KEY (`id`);
+
+  --
+-- AUTO_INCREMENT for table `note`
+--
+ALTER TABLE `note`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `image` longblob NOT NULL,
+ `uploaded` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
