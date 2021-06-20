@@ -144,6 +144,19 @@ CREATE TABLE `note` (
   `note` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tuteure`
+--
+
+CREATE TABLE `tuteure` (
+  `id` int(11) NOT NULL,
+  `projet` varchar(255),
+  `objectif` varchar(255),
+  `description` varchar(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -192,6 +205,11 @@ ALTER TABLE `note`
   ADD KEY `etudiant_id` (`etudiant_id`);
 
 --
+-- Indexes for table `tutere`
+--
+ALTER TABLE `tuteure`
+  ADD PRIMARY KEY (`id`)
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -236,6 +254,14 @@ ALTER TABLE `images`
 --
 ALTER TABLE `note`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+--
+-- AUTO_INCREMENT for table `tuteure`
+--
+ALTER TABLE `tuteure`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 
 --
 -- Constraints for dumped tables

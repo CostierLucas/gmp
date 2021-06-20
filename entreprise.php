@@ -32,8 +32,15 @@ très bonne girl pour les coueurs et tout
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col-12 text-center">
-                                            <a class="text-success" href="./offre-alternance.php">Offres d’alternances</a>
-                                            <p class="text-secondary">Ajouter une offre d’alternance, comportant le poste recherche, pour trouver le candidat qui correspondra le mieux à vos attentes. Consulter vos offres d’alternance, tout en les modifiant.</p>
+                                            <a class="text-success">Offres d’alternances</a>
+                                            <?php if (isset($_SESSION['sess_user_entreprise_email'])) { ?>
+                                                <div class="col-12 text-center">
+                                                    <p class="text-secondary">Ajouter une offre d’alternance, comportant le poste recherche, pour trouver le candidat qui correspondra le mieux à vos attentes. Consulter vos offres d’alternance, tout en les modifiant.</p>
+                                                    <a href="./form-add-offre-alternance.php"><button class="btn btn-primary mt-3 px-4">Ajouter une offre d'alternance</button></a>
+                                                </div>
+                                            <?php } else { ?>
+                                                <p class="text-secondary">Ajouter une offre d’alternance, comportant le poste recherche, pour trouver le candidat qui correspondra le mieux à vos attentes. Consulter vos offres d’alternance, tout en les modifiant.</p>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +58,14 @@ très bonne girl pour les coueurs et tout
                                     <div class="row mt-3">
                                         <div class="col-12 text-center">
                                             <p class="text-warning">Projets Tuteurés</p>
-                                            <p class="text-secondary">Ajoutez, consultez et modifiez le projet tuteuré, que vous souhaitez réalisé, avec l’aide des étudiants, qui devront réaliser un projet, en lien avec une entreprise professionnels.</p>
+                                            <?php if (isset($_SESSION['sess_user_entreprise_email'])) { ?>
+                                                <div class="col-12 text-center">
+                                                    <p class="text-secondary">Ajoutez, consultez et modifiez le projet tuteuré, que vous souhaitez réalisé, avec l’aide des étudiants, qui devront réaliser un projet, en lien avec une entreprise professionnels.</p>
+                                                    <a href="./form-add-projet.php"><button class="btn btn-primary mt-3 px-4">Consultez vos projets tuteurés</button></a>
+                                                </div>
+                                            <?php } else { ?>
+                                                <p class="text-secondary">Ajoutez, consultez et modifiez le projet tuteuré, que vous souhaitez réalisé, avec l’aide des étudiants, qui devront réaliser un projet, en lien avec une entreprise professionnels.</p>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
