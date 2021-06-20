@@ -15,5 +15,5 @@ $stmt->execute(array(
     'coefficient' => $coefficient,
     'note' => $note,
 ));
-              
-header('Location: ../enseignant.php');    
+
+header('Location: ../enseignant.php');
