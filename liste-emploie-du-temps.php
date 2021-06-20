@@ -1,7 +1,7 @@
 <?php include('header.php') 
 ?>
 <div class="container pt-4">
-    <h3>Vos cours</h3>
+    <h3>Votre emploie du temps</h3>
     <hr>
 </div>
 <div class="container pt-4">
@@ -10,19 +10,15 @@
             <div class="mb-3">
             <?php require_once('./controller/config.php');
 
-            $query = "SELECT * FROM cours"; 
+            $query = "SELECT * FROM images";
             $req = $conn->prepare($query);
             $req->execute();
 
             $result = $req->fetch(PDO::FETCH_ASSOC);
-            print_r($result['pdf_doc']);
             ?>
             </div>
         </form>
     </div>
 </div>
 <?php include('footer.php') ?>
-
-
-
 

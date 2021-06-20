@@ -57,7 +57,7 @@ include('./header.php'); ?>
                                             <?php if (isset($_SESSION['sess_user_enseignant_email'])) { ?>
                                                 <div class="col-12 text-center">
                                                     <p class="text-secondary">Consulter votre emploi du temps personnel depuis votre espace enseignant..</p>
-                                                    <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir votre emploi du temps</button></a>
+                                                    <a href="./liste-emploie-du-temps.php"><button class="btn btn-primary mt-3 px-4">Voir votre emploi du temps</button></a>
                                                 </div>
                                             <?php } else { ?>
                                                 <p class="text-secondary">Consulter votre emploi du temps personnel depuis votre espace enseignant.</p>

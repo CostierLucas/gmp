@@ -84,7 +84,7 @@ include('./header.php'); ?>
                                         <?php if (isset($_SESSION['sess_user_etudiant_email'])){ ?>
                                             <div class="col-12 text-center">
                                             <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible.</p>
-                                            <a href="./form-add-cours.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
+                                            <a href="./liste-alternance-etudiant.php"><button class="btn btn-primary mt-3 px-4">Voir</button></a>
                                         </div>
                                         <?php } else { ?> 
                                         <p class="text-secondary">Recherchez et postulez aux différents offres d'alternance disponible.</p>
